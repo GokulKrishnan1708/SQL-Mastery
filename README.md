@@ -1,71 +1,162 @@
 # 🗄️ SQL Mastery Project (TechCorp)
 
 ## 📌 Overview
-This project is part of my learning journey in SQL, Data Analytics, and Data Engineering fundamentals.  
-It demonstrates how to create a database, design tables, insert data, and perform real-world SQL queries.
+The **SQL Mastery Project (TechCorp)** documents my hands-on journey of learning SQL through practical exercises and progressively structured projects.
+
+Instead of only practicing SQL syntax, this repository focuses on understanding how relational databases are designed, how data is organized efficiently, and how SQL is used to solve real-world business problems.
+
+This project serves as the foundation for my roadmap toward **Data Analytics**, **Data Engineering**, and **Azure Data Services**.
 
 ---
 
 ## 🏢 Database Used
-**TechCorp Employee Database**
+
+**TechCorp Employee Management Database**
+
+A sample employee database built from scratch to practice database design and SQL querying.
 
 ---
 
-## 🧱 Features Covered
+## 📂 Project Structure
 
-### 1️⃣ Database Setup
+```
+SQL-Mastery
+│
+├── 00_database_setup
+├── 01_basic_select
+├── 02_filtering_advanced
+├── 03_sort_limit
+├── 04_aggregates
+├── 05_grouping
+├── 06_relationships
+└── README.md
+```
+
+---
+
+## 🧱 Concepts Covered
+
+### ✅ 00 - Database Setup
 - CREATE DATABASE
 - USE DATABASE
-- CREATE TABLE (employees)
-- INSERT data into table
+- CREATE TABLE
+- INSERT INTO
+- Database initialization
 
-### 2️⃣ Basic Queries
-- SELECT statements
-- Filtering using WHERE
+### ✅ 01 - Basic SQL Queries
+- SELECT
+- WHERE
+- Column selection
+- Basic filtering
 
-### 3️⃣ Advanced Filtering
-- LIKE (pattern matching)
-- IN (multiple values)
-- BETWEEN (range filtering)
+### ✅ 02 - Advanced Filtering
+- LIKE
+- IN
+- BETWEEN
+- AND / OR
+- Comparison Operators
 
-### 4️⃣ Sorting & Limiting
-- ORDER BY (ASC / DESC)
+### ✅ 03 - Sorting & Limiting
+- ORDER BY
+- ASC / DESC
 - LIMIT
 
-### 5️⃣ Aggregations
+### ✅ 04 - Aggregate Functions
 - COUNT()
 - SUM()
 - AVG()
 - MAX()
 - MIN()
 
-### 6️⃣ Grouping
+### ✅ 05 - Grouping Data
 - GROUP BY
 - HAVING
+- Department-wise analysis
+
+### ✅ 06 - Database Relationships
+- Primary Keys
+- Foreign Keys
+- One-to-Many Relationships
+- Referential Integrity
+- Database Normalization
+- Relational Database Design
 
 ---
 
-## 🎯 Objective
-To build strong SQL fundamentals for roles in:
-- Data Analytics
-- Data Engineering
-- Cloud (Azure Data Services)
+## 🛠️ Tools & Technologies
 
----
-
-## 🚀 Tools Used
-- MySQL Workbench
+- MySQL Workbench 8.0 CE
+- MySQL
+- Git
 - GitHub
 
 ---
 
-## 📈 Outcome
-This project helped me understand:
-- How relational databases work
-- How to query real-world datasets
-- How to structure SQL projects professionally
+## 🎯 Learning Objectives
+
+This project was created to strengthen my understanding of:
+
+- SQL Fundamentals
+- Relational Database Design
+- Query Optimization
+- Data Analysis using SQL
+- Database Normalization
+- Professional GitHub Project Organization
+
+---
+
+## 🚀 Skills Demonstrated
+
+- Database Creation
+- Table Design
+- Data Insertion
+- Data Filtering
+- Data Sorting
+- Aggregate Functions
+- Grouping & Summarization
+- Relational Database Design
+- Primary & Foreign Key Implementation
+- Git & GitHub Version Control
+
+---
+
+## 📌 Repository Roadmap
+
+### ✅ Completed
+
+- Database Setup
+- Basic Queries
+- Advanced Filtering
+- Sorting & Limiting
+- Aggregate Functions
+- GROUP BY & HAVING
+- Database Relationships
+
+### 🔄 Coming Next
+
+- SQL JOINs
+- Subqueries
+- Views
+- Stored Procedures
+- Real-world SQL Case Studies
+- Business Analysis Queries
+
+---
+
+## 🎯 Career Goal
+
+This repository is part of my long-term roadmap toward becoming a **Data Engineer** by building strong foundations in:
+
+- SQL
+- Python
+- Azure Cloud
+- Linux
+- Data Engineering
 
 ---
 
 ## 👨‍💻 Author
-Gokul K
+
+**Gokul K**
+
+*"Learning by building projects, one step at a time."*
