@@ -5,6 +5,13 @@
 
 -- Add a ManagerID column to the employees table
 
+-- ============================================
+-- NOTE:
+-- Run this ALTER TABLE statement only once.
+-- If the ManagerID column already exists,
+-- skip this section.
+-- ============================================
+
 ALTER TABLE employees
 ADD ManagerID INT;
 
