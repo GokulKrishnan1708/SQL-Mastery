@@ -1,76 +1,194 @@
-# SQL JOINs
+# 🔗 SQL JOINs (TechCorp Employee Database)
 
-## 📌 Objective
+## 📌 Overview
 
-Learn how to combine data from multiple related tables using SQL JOIN operations.
-
----
-
-## 🧠 Concepts Covered
-
-### ✅ INNER JOIN
-
-* Retrieve matching records from two related tables
-* Combine employee and department information
-* Filter joined data using `WHERE`
-* Sort joined results using `ORDER BY`
-* Use table aliases (`e`, `d`) for cleaner SQL queries
-
-### ✅ LEFT JOIN
-
-* Retrieve all records from the left table (`employees`)
-* Retrieve matching records from the right table (`departments`)
-* Return `NULL` for records with no matching department
-* Compare the behavior of `LEFT JOIN` and `INNER JOIN`
-* Apply filtering and sorting to joined data
+This module demonstrates how SQL JOIN operations are used to combine data from multiple related tables. It covers the most commonly used JOIN types in relational databases and explains their practical applications using a TechCorp employee database.
 
 ---
 
-## 🗂️ Tables Used
+# 🗂️ Tables Used
 
-### Employees
+## Employees
 
-* EmployeeID
-* Name
-* Email
-* Mobile
-* DepartmentID *(Foreign Key)*
-* Salary
-* Joining_Date
-
-### Departments
-
-* DepartmentID *(Primary Key)*
-* DepartmentName
+| Column       | Description                             |
+| ------------ | --------------------------------------- |
+| EmployeeID   | Primary Key                             |
+| Name         | Employee Name                           |
+| Email        | Employee Email                          |
+| Mobile       | Contact Number                          |
+| DepartmentID | Foreign Key referencing Departments     |
+| Salary       | Employee Salary                         |
+| Joining_Date | Date of Joining                         |
+| ManagerID    | References another employee (Self Join) |
 
 ---
 
-## 🔗 Relationship
+## Departments
 
-The `DepartmentID` column in the **Employees** table is a **Foreign Key** that references the `DepartmentID` column in the **Departments** table.
-
-This relationship allows SQL JOIN operations to combine employee details with their corresponding department information.
-
----
-
-## 🎯 Learning Outcomes
-
-After completing this section, I can:
-
-* Write **INNER JOIN** queries to retrieve matching records
-* Write **LEFT JOIN** queries to retrieve all records from the left table
-* Combine data from multiple related tables
-* Use table aliases (`e`, `d`) to improve query readability
-* Filter joined data using `WHERE`
-* Sort joined results using `ORDER BY`
-* Understand the difference between **INNER JOIN** and **LEFT JOIN**
-* Apply relational database concepts in practical SQL queries
+| Column         | Description     |
+| -------------- | --------------- |
+| DepartmentID   | Primary Key     |
+| DepartmentName | Department Name |
 
 ---
 
-## 🚀 Next Topics
+## Projects
 
-* ⏳ RIGHT JOIN
-* ⏳ SELF JOIN
-* ⏳ CROSS JOIN
-* ⏳ JOIN Challenges
+| Column      | Description  |
+| ----------- | ------------ |
+| ProjectID   | Primary Key  |
+| ProjectName | Project Name |
+
+---
+
+# 📚 JOIN Types Covered
+
+## ✅ INNER JOIN
+
+**Purpose**
+
+Retrieve only the records that have matching values in both tables.
+
+**Concepts Learned**
+
+* Matching related records
+* Using Primary Key and Foreign Key relationships
+* Table aliases (`e`, `d`)
+* Filtering joined data
+* Sorting joined results
+
+---
+
+## ✅ LEFT JOIN
+
+**Purpose**
+
+Retrieve all records from the left table and matching records from the right table.
+
+**Concepts Learned**
+
+* Keeping all rows from the left table
+* Handling `NULL` values
+* Filtering joined data
+* Sorting results
+
+---
+
+## ✅ RIGHT JOIN
+
+**Purpose**
+
+Retrieve all records from the right table and matching records from the left table.
+
+**Concepts Learned**
+
+* Keeping all rows from the right table
+* Identifying departments without employees
+* Comparing LEFT JOIN and RIGHT JOIN behavior
+
+---
+
+## ✅ SELF JOIN
+
+**Purpose**
+
+Join a table with itself to represent hierarchical relationships.
+
+**Concepts Learned**
+
+* Employee → Manager relationships
+* Using multiple aliases for the same table
+* Matching `ManagerID` with `EmployeeID`
+* Understanding hierarchical data structures
+
+---
+
+## ✅ CROSS JOIN
+
+**Purpose**
+
+Generate every possible combination of rows from two tables.
+
+**Concepts Learned**
+
+* Cartesian Product
+* Combining employees with projects
+* Understanding result size (`Rows A × Rows B`)
+* Practical use cases for generating combinations
+
+---
+
+# 🎯 Learning Outcomes
+
+After completing this module, I can:
+
+* Understand relationships between database tables
+* Use Primary Keys and Foreign Keys effectively
+* Write INNER JOIN queries
+* Write LEFT JOIN queries
+* Write RIGHT JOIN queries
+* Write SELF JOIN queries using table aliases
+* Write CROSS JOIN queries
+* Filter and sort joined data
+* Understand hierarchical relationships
+* Apply JOIN operations to solve real-world business problems
+
+---
+
+# 🛠️ Technologies Used
+
+* MySQL
+* MySQL Workbench
+* Git
+* GitHub
+
+---
+
+# 📁 Files Included
+
+```text
+07_joins/
+│
+├── README.md
+├── inner_join.sql
+├── left_join.sql
+├── right_join.sql
+├── self_join.sql
+└── cross_join.sql
+```
+
+---
+
+# 🚀 Real-World Applications
+
+SQL JOINs are commonly used in:
+
+* Human Resource Management Systems
+* Banking Applications
+* E-commerce Platforms
+* Hospital Management Systems
+* University Databases
+* Customer Relationship Management (CRM)
+* Enterprise Resource Planning (ERP)
+* Data Analytics
+* Data Engineering
+* Business Intelligence Reporting
+
+---
+
+# 📈 Skills Developed
+
+* Relational Database Design
+* Data Retrieval
+* Query Optimization Fundamentals
+* SQL JOIN Techniques
+* Database Relationship Modeling
+* Business Data Analysis
+
+---
+
+## 👨‍💻 Author
+
+**Gokul K**
+
+Learning SQL as part of my journey toward **Data Engineering**, **Cloud Computing**, **Python**, and **Artificial Intelligence**.
