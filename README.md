@@ -31,6 +31,7 @@ SQL-Mastery
 ├── 05_grouping
 ├── 06_relationships
 ├── 07_joins
+├── 08_subqueries
 └── README.md
 ```
 
@@ -123,6 +124,21 @@ SQL-Mastery
 * Employee–Manager Hierarchies
 * Cartesian Products
 * Multi-table Querying
+
+---
+
+## ✅ 08 - SQL Subqueries
+
+* Single-Row Subqueries
+* Multiple-Row Subqueries
+* Subqueries with IN
+* Subqueries with Aggregate Functions (AVG, MAX)
+* EXISTS and NOT EXISTS
+* Correlated Subqueries
+* Nested Queries
+* Department-Wise Salary Comparisons
+* Company-Wide vs Department-Wise Averages
+* Finding Highest-Paid Employees in Each Department
 
 ---
 
@@ -226,7 +242,6 @@ This repository is part of my long-term roadmap toward becoming a **Data Enginee
 
 ### 🚀 Upcoming Modules
 
-* Subqueries
 * Views
 * Constraints
 * UPDATE & DELETE
